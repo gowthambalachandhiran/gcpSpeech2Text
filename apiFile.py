@@ -38,7 +38,7 @@ def readFileWav(file):
         return audio_wav
     
 @app.route('/')    
-@app.route('/voice', methods=['GET', 'POST'])
+@app.route('/voice', methods='POST')
 def add_message():
     print(request.is_json)
     content = request.get_json()
