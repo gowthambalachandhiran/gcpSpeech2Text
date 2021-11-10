@@ -37,7 +37,7 @@ def readFileWav(file):
         audio_wav = speech.RecognitionAudio(content=file_data)
         return audio_wav
     
-    
+@app.route('/')    
 @app.route('/voice', methods=['GET', 'POST'])
 def add_message():
     print(request.is_json)
@@ -58,7 +58,9 @@ def add_message():
     return jsonify({"transcribed_text":transcribed_text})
 
 if __name__ == '__main__':
+    app.debug = True
     app.run()
-
+    
+   
 
 
