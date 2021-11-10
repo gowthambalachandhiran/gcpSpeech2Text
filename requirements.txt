@@ -2,7 +2,6 @@ absl-py==0.13.0
 aequitas==0.42.0
 alabaster==0.7.12
 altair==4.1.0
-anaconda-client==1.9.0
 anaconda-navigator==2.1.0
 anaconda-project==0.10.1
 anyio==2.2.0
